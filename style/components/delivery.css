@@ -1,0 +1,75 @@
+.delivery{
+    background-color: #f99cc6;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.del-title{
+    text-align: center;
+    font-size: 35px;
+    color: #222;
+    font-weight: 700;
+}
+.del-subtitle{
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+    padding: 10px 0 20px;
+}
+
+.del-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.del-phone{
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: #6ab04c;
+    padding-left: 20px;
+}
+.del-phone:hover, .del-phone:hover i{
+    color: #ff00dd;
+}
+.del-phone i::before{
+    content: "\f095";
+    position: absolute;
+    font-size: 20px;
+    font-weight: 900;
+    top: 3px;
+    left: 0;
+}
+.del-phone:hover i::before{
+    animation: rot 2s linear infinite;
+}
+
+.del-book{
+    padding: 10px 25px;
+    background-color: #f368e0;
+    border: 2px solid #f368e0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transition: .4s;
+}
+.del-book:hover{
+    background-color: transparent;
+    border: 2px solid #f368e0;
+    color: #ff00dd;
+}
+
+@media(max-width:800px){
+    .delivery{
+        padding: 10px;
+    }
+    .del-links{
+        flex-direction: column;
+    }
+    .del-links a{
+        margin-bottom: 20px;
+    }
+}

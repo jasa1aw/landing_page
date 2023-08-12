@@ -1,0 +1,17 @@
+@import url("vendor/reset.css");
+@import url("components/base.css");
+@import url("components/animation.css");
+@import url("components/header.css");
+@import url("components/home.css");
+@import url("components/about.css");
+@import url("components/menu.css");
+@import url("components/gallary.css");
+@import url("components/counter.css");
+@import url("components/delivery.css");
+@import url("components/chefs.css");
+@import url("components/testimonials.css");
+@import url("components/blog.css");
+@import url("components/contact.css");
+@import url("components/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+

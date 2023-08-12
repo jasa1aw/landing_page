@@ -1,0 +1,201 @@
+.footer{
+    background-color: #121212;
+}
+
+.footer-field{
+    align-items: flex-start;
+    color: #ededed;
+    padding: 0;
+    padding: 30px 0 20px;
+    flex-wrap: wrap
+}
+.footer-field > div{
+    flex-basis: calc(25% - 20px);
+}
+.footer-field h3{
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+.footer-field h3 i::before{
+    content: "\f0da";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    transform: translate(0, -10%);
+    font-size: 30px;
+    color: #f99cc6;
+}
+
+.opening-details .footer-logo{
+    display: block;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Merriweather Sans',sans-serif;
+    color: #f99cc6;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.opening-details .middle-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.opening-details .open-time{
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.contact-details a{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    color: #ededed;
+}
+.contact-details address{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-style: italic;
+}
+.contact-details address i::before{
+    content: "\f3c5";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 50%);
+    font-size: 20px;
+    font-style: italic;
+    color: #f99cc6;
+}
+.contact-details .email-link:hover, 
+.contact-details .phone-link:hover{
+    color: #f99cc6;
+}
+.contact-details .email-link i::before{
+    content: "\f0e0";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f99cc6;
+}
+.contact-details .phone-link i::before{
+    content: "\f095";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f99cc6;
+}
+
+.quick-links ul{
+    display: block;
+}
+.quick-links ul li{
+    padding: 5px 0;
+}
+.quick-links ul li a{
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ededed;
+    transition: .5s ease-in-out;
+}
+.quick-links ul li a:hover{
+    padding-left: 15px;
+    color: #f99cc6;
+}
+.quick-links ul li a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f99cc6;
+    transition: .5s ease-in-out;
+}
+.quick-links ul li a:hover::before{
+    width: 10px;
+}
+
+.subscribtion form .email{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #000;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.subscribtion form .submit{
+    margin: 20px 0;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #f99cc6;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.subscribtion ul{
+    display: flex;
+    align-items: center;
+}
+.subscribtion ul li{
+    margin: 5px 10px;
+}
+.subscribtion ul li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #f99cc6;
+    transition: .5s ease-in-out;
+}
+.subscribtion ul li a:hover{
+    box-shadow: inset 0 0 10px 1px #f99cc6;
+}
+.subscribtion ul li a i{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.copyright{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #cacaca;
+    font-size: 16px;
+    color: #fff;
+}
+.copyright span{
+    padding: 0 3px;
+    font-weight: 600;
+    color: #f99cc6;
+}
+
+@media(max-width:1000px){
+    .footer-field > div{
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media(max-width:800px){
+    .footer-field > div{
+        flex-basis: 100%;
+    }
+    .subscribtion form .email{
+        width: 40%;
+    }
+}
