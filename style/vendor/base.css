@@ -9,6 +9,9 @@
 
 .book-table-bth{
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 20px;
     left: 30px;
     width: 50px;
@@ -21,8 +24,6 @@
 }
 
 .fa-solid.fa-pen{
-    display: flex;
-    justify-content: center;
     padding: 13px;
     font-size: 20px;
     color: #ff00dd;
@@ -67,4 +68,19 @@
 }
 .field > div {
     flex-basis: calc(50% - 20px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 500px){
+    .book-table-bth{
+        width: 35px;
+        height: 35px;
+        left: 20px;
+    }
+    .fa-solid.fa-pen{
+        font-size: 15px;
+    }
 }

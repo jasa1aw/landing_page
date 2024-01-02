@@ -106,6 +106,7 @@
     color: #6ab04c;
     padding: 8px 15px;
     font-weight: 600;
+    transition: .3s;
 }
 .blog-links .link-more:hover{
     color: #ff00dd;

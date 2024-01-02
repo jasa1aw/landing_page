@@ -4,6 +4,7 @@
 }
 
 .menu-title{
+    /* animation: slideToDown .5s ease-in .5s 1 normal both; */
     justify-content: center;
     padding-top: 20px;
 }
@@ -12,6 +13,7 @@
     height: 75px;
 } 
 .menu-subtitle{
+    /* animation: slideToDown .5s ease-in .5s 1 normal both; */
     width: fit-content;
     margin: 0 auto 40px;
     padding: 15px 30px;
@@ -28,6 +30,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    overflow-x: hidden;
 }
 .donuts-menu, .offer{
     width: calc(50% - 20px);
@@ -40,6 +43,7 @@
     border-radius: 10px;
     box-shadow: 0 0 7px 1px #000;
 }
+
 .donuts-menu > div {
     display: flex;
     width: 100%;
@@ -74,6 +78,7 @@
     width: 100%;
     object-fit: cover;
 }
+
 
 .offer-head{
     margin-bottom: 30px;
@@ -200,7 +205,6 @@
     font-size: 25px;
     color: #6ab04c;
 }
-
 @media(max-width:1000px){
     .menu-container{
         width: 85% !important;
@@ -231,5 +235,10 @@
         margin: 0 auto 15px;
         padding: 15px 15px;
         font-size: 18px;
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 }
