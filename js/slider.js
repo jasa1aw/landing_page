@@ -1,4 +1,3 @@
-
 let dotsButton = document.getElementsByClassName("dots")
 $('.home-slider').slick({
     vertical: true,
